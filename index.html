@@ -1,71 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-   <style>
-      
-      .box{
-        background: white; 
-        padding: 50px;
-        margin: 10px;
-        text-align: center;
-
-      }
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website - AP COMP SCI FINAL PROJECT</title>
+  <style>
+   
       body{
-        background-color: blue;
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-      }
-      
-      .grid{
-        display: grid;
-        justify-content: center;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-          
-      }
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: blue;
+      color: black;
+    }
+    
+    a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  font-size: 18px
+}
+    .box:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+    
+     header{
+      background: linear-gradient(135deg, #00b4d8, #90e0ef);
+     
+      padding: 2rem;
+      text-align: center;
+      width: 100%;
+       height: 100%;
+    }
+    
+     img{ 
+       
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  top-margin: 10px;
   
-    </style>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
+     }
     
-    <p>
-    </p>
+    .grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      overflow-y: auto;
+    }
+
+    .box, .box2{
+      background: white;
+      padding: 30px;
+      margin: 10px 0;
+      text-align: center;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content
+    }
+
+   
+    h2 {
+      color: #0077cc;
+      font-weight: bold;
+      text-decoration: none;
+      bottom-margin: 10px;
+      display: inline-block;
+    }
+
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-weight: bold;
+      border-top: 1px solid #ccc;
+      flex-shrink: 0;
+    }
     
-    <div class = "grid">
-    <div class = "box">
-      <p>Tic Tac Toe Game</p>
+   
+    .aboutMe{
+      background: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%
+        box-sizing: border-box;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website
+      </h1>
+    </header>
+  
+  <main>
+    
+  </main>
+  <div class = "homePage"> 
+  homePage </div>
+  
+  
+  <div class = "aboutMe">
+    <p>Hi, my name is Fernando D. and I am a junior from Mt. Eden High School in Hayward, California. This is 
+    </p> 
+  </div>
+
+  <div class="grid">
+    
+    <a href="ticTacToe.html" class="box-link">
+    <div class="box">
+      <h2 href="ticTacToe.html">Tic Tac Toe Game</h2>
+       <img src= "https://play-lh.googleusercontent.com/KZTO1L6r8CzWlg2InJoU_ndRAuvYiaS-35MyYdDPeeVCPNVfM9SBY2qRGjvvADmDIR8"></img>
     </div>
-       <div class = "box">
-         <p>Matching Game</p>
-         
-       </div>   
-    <div class = "box">
-          
-      <a href = "connectFour.html">Connect Four</a>
-    </div>
-       <div class = "box">
-      <p>Explanation</p>
-    </div>
-       <div class = "box">
-      <p>Explanation</p>
-    </div>
-       <div class = "box">
-         <p>Explanation</p>
-           
-         </div>
+    </a>
+  
+  <a href="matchingGame.html" class="box-link">
+    <div class="box">
+      <h2>Matching Game</h2>
+        <img src= "https://www.memozor.com/templates/memoire/images/zoom/memory_game_kids_colors.jpg"</img>
     </div>
       
-    <script src="index.js"></script>
-  </body>
+      <a href="connectFour.html" class="box-link">
+    <div class="box">
+      <h2>Connect Four</h2>
+      <img src= "https://momaland.farama.org/_images/moconnect4.gif"></img>
+    </div>
+  </a>
+  
+  
+  
+    <div class="box2">
+      <p>This is a simple Tic Tac Toe Game made using HTML, CSS, and Javascript. This was my first experience and project made with Javascript, so it was a bit of a learning experience. Nonetheless I enjoyed being able to see the game come to life after working through challenges, debugging issues and deepening my understanding of programming. This game employs key programming concepts such as the creation of separate div elements, displaying of a grid, and implementing logical operators and conditionals to ensure proper gameplay.</p>
+    </div>
+    <div class="box2">
+      <p>This is another project I made using javascript. After watching a tutorial video, I was able to put what I learned to use and practice implementing code. I was also able to make several adjustments, particularly to the styling and design to give the code a more personal touch. This project reinforced my knowledge of programming and allowed me the opportunity to create another fun and fully functional game from the ground up.</p>
+    </div>
+    <div class="box2">
+      <p>This is my third and final Javascript program, a functional Connect Four game. From the three projects I worked on, this was definitely the most difficult as there were lots of elements involved and it was challenging to work out the game logics due to its complexity. Furthermore, we were not to use a tutorial video or similar resource. However, through collaborating with my peers, we were able to get the game working properly. This project, like the rest, was a great learning experience and challenged me to take what I know and apply it to creating a functioning program.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 AP COMP SCI - Fernando D.</p>
+  </footer>
+</body>
 </html>
+
+
