@@ -1,4 +1,10 @@
 const cells = document.querySelectorAll(".cell");
+
+ const homeBtn = document.getElementById("homeBtn");
+homeBtn.addEventListener("click",function(){
+      window.location.href = "index.html";
+});
+
 const statusText = document.querySelector("#statusText");
 const restartBtn = document.querySelector("#restartBtn");
 const winConditions = [
