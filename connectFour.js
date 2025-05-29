@@ -1,10 +1,10 @@
 const cells = document.querySelectorAll(".cell");
       const statusText = document.querySelector("#statusText");
       const restartBtn = document.querySelector("#restartBtn");
- const homeBtn = document.getElementById("#homeBtn");
+ const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click",function(){
       window.location.href = "index.html";
-}
+});
       const winConditions = [ <!--this function will be called to see if the following are true for a player to win-->
         <!--Below are the possible horizontal wins-->
         [0,1,2,3],
