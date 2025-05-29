@@ -1,4 +1,4 @@
- const cells = document.querySelectorAll(".cell");
+const cells = document.querySelectorAll(".cell");
 
  const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click",function(){
@@ -90,3 +90,4 @@ function restartGame(){
     cells.forEach(cell => cell.textContent = "");// Deletes the text content of each cell. This marks a fresh start. 
     running = true;// resumes the game. Makes it all go again. 
 }
+  
