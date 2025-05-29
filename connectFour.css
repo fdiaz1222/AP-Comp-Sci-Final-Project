@@ -29,3 +29,18 @@
         padding: 10px;
         background: #ffffff
       }
+
+.home-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #005fa3;
+}
