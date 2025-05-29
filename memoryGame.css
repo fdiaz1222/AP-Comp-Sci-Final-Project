@@ -1,7 +1,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: linear-gradient(325deg,  #2F2BFF 0%,#FF2B32 30%,#2F2BFF 70%, #FF2B32 100%);
+    background: linear-gradient(325deg,  #2c7da0 0%,#FF2B32 30%,#2c7da0 70%, #FF2B32 100%);
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -58,7 +58,7 @@ button {
 .win {
     border-radius: 5px;
     box-shadow: 0 25px 50px rgb(33 33 33 / 55%);
-    background: linear-gradient(135deg,  #03001e 0%,#FF0008 0%,#FFDD00 50%, #FF0008 100%);
+   background: linear-gradient(135deg, #2c7da0, #90e0ef);
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
