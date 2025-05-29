@@ -31,7 +31,7 @@ function initializeGame(){
     running = true;// Starts the game
 }
 function cellClicked(){
-    const cellIndex = Array.from(cells).indexOf(this);
+    const cellIndex = this.getAttribute("cellIndex");
 
     if(options[cellIndex] != "" || !running){
         return;
