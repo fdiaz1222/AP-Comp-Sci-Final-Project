@@ -23,7 +23,8 @@
   body{
          background: #00b4d8 
        }/* Gives the background a very light blue. */
-#restartBtn{
+#restartBtn, #homeBtn{
   border: 2px solid;
   background: #ffffff
 }/* Adds a 2px solid border and sets the background color of the restart button to white. */
+
