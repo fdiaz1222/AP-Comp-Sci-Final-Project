@@ -18,7 +18,10 @@ let running = false;
 initializeGame();
 
 function initializeGame(){
-    cells.forEach(cell => cell.addEventListener("click", cellClicked)); // Adds click event listener to all cells, making it interactive..
+    cells.forEach((cell, index) => {
+        cell.setAttribute("cellIndex", index); 
+        cell.addEventListener("click", cellClicked);
+    }); // Adds click event listener to all cells, making it interactive..
     restartBtn.addEventListener("click", restartGame); // Adds click event listener to restart button, making it interactive.
     statusText.textContent = `${currentPlayer}'s turn`; // Updates the status text to show the current player's turn
     running = true; // Starts the game
