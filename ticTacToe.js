@@ -1,8 +1,4 @@
- <button id="restartBtn">Restart</button>
-      <button id="homeBtn">Return to Home</button>
-    </div>
-    <script>
-    const cells = document.querySelectorAll(".cell");
+ const cells = document.querySelectorAll(".cell");
 
  const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click",function(){
