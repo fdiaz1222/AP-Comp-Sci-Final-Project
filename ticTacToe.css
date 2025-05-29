@@ -1,49 +1,58 @@
-.cell{
-    width: 110px;
-    height: 110px;
-    border: 2px solid #000;
-    display: flex;
-    text-align: center;
-    align-items: center;    
-    justify-content: center; 
-    font-size: 3rem;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    cursor: pointer;
-    }
-
-#gameContainer{
-    font-family: "Permanent Marker";
-    text-align: center;
-    padding: 55px;
+body {
+  background: #00b4d8;
+  margin: 0;
+  font-family: "Georgia";
 }
 
-#cellContainer{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 340px;
-    margin: auto;
-    
-    justify-content: center;
-    background: #ffffff
+#gameContainer {
+  font-family: "Georgia";
+  text-align: center;
+  
 }
 
-body{
-         background: #00b4d8 
-       }
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 115px);
+  justify-content: center;
+  margin: 0px auto;
+  background: #ffffff;
+  font-family: "Permanent Marker";
+  width: 345px;
+ 
+}
 
-.return-home, #restartBtn {
+.cell {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #000;
+  user-select: none;
+}
+
+.return-home,
+#restartBtn {
   display: inline-block;
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
+  margin-top: 10px;
   font-size: 16px;
   text-decoration: none;
   color: #333;
-  border: 2px solid;
-  padding: 6px 12px;
-  border-radius: 4px;    
-  background: #ffffff
+  border: 2px solid #333;
+  padding: 10px 8px;
+  border-radius: 4px;
+  background: #ffffff;
+  transition: background-color 0.3s ease;
 }
-.return-home:hover {
+
+.return-home:hover,
+#restartBtn:hover {
   background-color: #ddd;
+}
+
+h1{
+  font-family: Georgia;
 }
