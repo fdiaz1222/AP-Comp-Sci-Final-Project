@@ -15,6 +15,10 @@ const state = {
     loop: null
 }
 
+ const homeBtn = document.getElementById("homeBtn");
+homeBtn.addEventListener("click",function(){
+      window.location.href = "index.html";
+});
 
 const shuffle = array => {
     const clonedArray = [...array]
