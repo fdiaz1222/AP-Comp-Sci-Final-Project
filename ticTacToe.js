@@ -1,8 +1,3 @@
-const homeBtn = document.getElementById("homeBtn");
-homeBtn.addEventListener("click",function(){
-      window.location.href = "index.html";
-});
-
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText");
 const restartBtn = document.querySelector("#restartBtn");
