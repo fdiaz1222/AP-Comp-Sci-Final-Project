@@ -70,7 +70,7 @@ const generateGame = () => {
     `
     const parser = new DOMParser().parseFromString(cards, 'text/html')
 
-    selectors.board = document.querySelector('.board');
+   selectors.board.replaceWith(parser.querySelector('.board'));
 }
 
 const startGame = () => {
