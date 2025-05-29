@@ -1,30 +1,33 @@
-.cell{
+   .cell{
     width: 75px;
     height: 75px;
-    border: 2px solid;
+    border: 2px solid #000;
+    display: inline-block;
+    text-align: center;
     box-shadow: 0 0 0 2px;
     line-height: 75px;
     font-size: 50px;
     cursor: pointer;
 }
-/* Determines the cell's width, height, the size of the cell's border, box-shadows which atempts to give the game a 3D look, centers the X or O vertically in the middle of the cell (line-height), fint size inside of text inside the cells and lastly, cursor makes the *cursor* into a pointer, creating a hovering effect.*/
+
 #gameContainer{
     font-family: "Permanent Marker";
     text-align: center;
     padding: 55px;
-}/* Sets the font to "Permanent Marker", centers the text within the container, and adds 55px of padding around the content inside the game container. */
+}
 #cellContainer{
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 235px;
     margin: auto;
     background: #ffffff
-}/* Uses a grid layout to arrange the cells in 3 columns that are all the same, sets the container width to 235px, centers the container horizontally with margin (auto), and gives the container a white background (#ffffff). */
+}
+    
   body{
          background: #00b4d8 
-       }/* Gives the background a very light blue. */
+       }
+    
 #restartBtn, #homeBtn{
   border: 2px solid;
   background: #ffffff
-}/* Adds a 2px solid border and sets the background color of the restart button to white. */
-
+}
