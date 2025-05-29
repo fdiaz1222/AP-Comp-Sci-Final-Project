@@ -8,11 +8,14 @@
    
       body{
       height: 100%;
+      width: 100%;
       margin: 0;
       display: flex;
       flex-direction: column;
       background-color: blue;
-      color: black;
+      padding: 0px;
+      overflow-x: hidden;
+      text-align: center;
     }
     
     a:hover {
@@ -20,27 +23,32 @@
   text-decoration: underline;
   font-size: 18px
 }
-    .box:hover {
+    .box:hover{
   background-color: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.65);
   transition: all 0.3s ease;
   cursor: pointer;
 }
     
+    
      header{
-      background: linear-gradient(135deg, #00b4d8, #90e0ef);
+      background: linear-gradient(135deg, #2c7da0, #90e0ef);
      
       padding: 2rem;
       text-align: center;
-      width: 100%;
-       height: 100%;
+      
+      align-items: center;
+      justify-content: center;
+    }
+    
+    h1{
+      text-align: center;
     }
     
      img{ 
        
   width: 100%;
   height: auto;
-  display: block;
   margin: 0 auto;
   top-margin: 10px;
   
@@ -55,7 +63,7 @@
       overflow-y: auto;
     }
 
-    .box, .box2{
+    .box{
       background: white;
       padding: 30px;
       margin: 10px 0;
@@ -63,10 +71,20 @@
       border-radius: 6px;
       display: flex;
       flex-direction: column;
-      justify-content
+      height: 310px
     }
-
    
+      .box2{
+      background: white;
+      padding: 30px;
+      margin: 10px 0;
+      text-align: center;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+        
+    }
+    
     h2 {
       color: #0077cc;
       font-weight: bold;
@@ -90,7 +108,12 @@
       padding: 20px;
       text-align: center;
       width: 100%
-        box-sizing: border-box;
+      box-sizing: border-box;
+      
+    }
+    
+    .homePage{
+      padding: 10px;
     }
     
   </style>
@@ -105,11 +128,11 @@
     
   </main>
   <div class = "homePage"> 
-  homePage </div>
+   </div>
   
   
   <div class = "aboutMe">
-    <p>Hi, my name is Fernando D. and I am a junior from Mt. Eden High School in Hayward, California. This is 
+    <p>Hi, my name is Fernando D. and I am a junior from Mt. Eden High School in Hayward, California. This year I had the opportunity to become a programmer through taking AP Computer Science Principles. I've enjoyed being able to learn more about how computers and the internet work as well as the logic behind some of my favorite games. Being a beginner programmer, it was hard at first to adjust to essentially a whole new language. However, over the course of the year with lots of practice I was able to develop a solid understanding of the fundamentals of coding. We started with learning C++, then moved on to HTML, JavaScript and CSS as well. In the end we were able to develop our own programs, collaborate with peers and even develop our own webpage such as this one. This website is a portfolio of the projects I have created this year. Altogether, despite a rocky start, this year turned out to be a great experience in learning a new skill and developing a greater understanding of an essential practice.
     </p> 
   </div>
 
@@ -122,9 +145,9 @@
     </div>
     </a>
   
-  <a href="matchingGame.html" class="box-link">
+  <a href="memoryGame.html" class="box-link">
     <div class="box">
-      <h2>Matching Game</h2>
+      <h2>Memory Game</h2>
         <img src= "https://www.memozor.com/templates/memoire/images/zoom/memory_game_kids_colors.jpg"</img>
     </div>
       
@@ -134,9 +157,7 @@
       <img src= "https://momaland.farama.org/_images/moconnect4.gif"></img>
     </div>
   </a>
-  
-  
-  
+ 
     <div class="box2">
       <p>This is a simple Tic Tac Toe Game made using HTML, CSS, and Javascript. This was my first experience and project made with Javascript, so it was a bit of a learning experience. Nonetheless I enjoyed being able to see the game come to life after working through challenges, debugging issues and deepening my understanding of programming. This game employs key programming concepts such as the creation of separate div elements, displaying of a grid, and implementing logical operators and conditionals to ensure proper gameplay.</p>
     </div>
@@ -153,5 +174,3 @@
   </footer>
 </body>
 </html>
-
-
