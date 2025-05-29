@@ -1,6 +1,10 @@
 const cells = document.querySelectorAll(".cell");
       const statusText = document.querySelector("#statusText");
       const restartBtn = document.querySelector("#restartBtn");
+ const homeBtn = document.getElementById("#homeBtn");
+homeBtn.addEventListener("click",function(){
+      window.location.href = "index.html";
+}
       const winConditions = [ <!--this function will be called to see if the following are true for a player to win-->
         <!--Below are the possible horizontal wins-->
         [0,1,2,3],
@@ -102,7 +106,7 @@ const cells = document.querySelectorAll(".cell");
 
       function initializeGame(){
           cells.forEach(cell => cell.addEventListener("click", cellClicked));  <!--when a cells is clicked, it'll change to the pressed version using the cellClicked function-->
-          restartBtn.addEventListener("click", restartGame); <!--if the reset button is hit then the game resets-->
+          restartBtn.addEventListener("click", restartGame);<!--if the reset button is hit then the game resets-->
           statusText.textContent = `${currentPlayer}'s turn`;  //This updates the game and makes sure its the next person turn with whatever color is next -red or yellow-
           running = true; 
       }     <!--this function initializes the game, and notices when a cell is clicked-->
@@ -162,4 +166,5 @@ const cells = document.querySelectorAll(".cell");
           statusText.textContent = `${currentPlayer}'s turn`; 
           cells.forEach(cell => cell.textContent = ""); 
           running = true; 
+      
       }       <!--this resets the the game and allows for red to always start first, it also lets all the cells to reset and turn into empty spaces again-->
