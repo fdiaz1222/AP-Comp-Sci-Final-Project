@@ -11,9 +11,10 @@
         cursor: pointer;
       }
       #gameContainer{
-          font-family: "Arial";
+          font-family: "monospace";
           text-align: center;
-          padding: 55px;
+          padding: 40px;
+          font-size: 15px;
       }
       #cellContainer{
           display: grid;
@@ -39,6 +40,10 @@
         background: #ffffff
 }
 
-#homeBtn:hover {
-  background-color: #005fa3;
+#homeBtn:hover, #restartBtn:hover{
+  background-color: #8ecae6;
+}
+
+.h1{
+  background-color: white;
 }
