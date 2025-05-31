@@ -12,10 +12,11 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      background-color: blue;
+      background-color: #8f9290;
       padding: 0px;
       overflow-x: hidden;
       text-align: center;
+      font-size:16px;
     }
     
     a:hover {
@@ -32,26 +33,28 @@
     
     
      header{
-      background: linear-gradient(135deg, #2c7da0, #90e0ef);
+      background: linear-gradient(135deg,  #8ecae6, #1D3D81);
      
       padding: 5rem;
       text-align: center;
-      
+      color: white;
+      font-family: monospace;
       align-items: center;
+      font-size: 35px;
       justify-content: center;
       text-color: white;
     }
     
-    h1{
+    h1, h3{
       text-align: center;
     }
     
      img{ 
-       
-  width: 100%;
+  height: 100%;
   height: auto;
   margin: 0 auto;
   top-margin: 10px;
+  max-width: 100%;
   
      }
     
@@ -72,7 +75,7 @@
       border-radius: 6px;
       display: flex;
       flex-direction: column;
-      height: 450px;
+      height: 550px;
       
     }
    
@@ -86,6 +89,10 @@
       flex-direction: column;
       align-items: center;    
       justify-content: center;
+      text-align: justify;
+      font-family: verdana;
+      font-size: 16px;
+line-height: 22px;
     }
     
     h2 {
@@ -97,30 +104,42 @@
     }
 
     footer {
-      background-color: white;
+      background: white;
       text-align: center;
       padding: 15px 0;
       font-weight: bold;
       border-top: 1px solid #ccc;
       flex-shrink: 0;
+      font-family: verdana;
+      font-color: blue;
     }
     
    
      .aboutMe{
       background: white;
-      padding: 10px;
+      padding: 30px;
       text-align: center;
-      width: 80%
+     
       box-sizing: border-box;
       border-radius: 6px;
       margin: 10px;
-      
+      text-align: justify;
+      font-family: verdana;
+      line-height: 22px;
+       
+       
     }
     
     .homePage{
       padding: 10px;
     }
-
+    
+    .reflection{
+      max-width: 80%;
+      text-align: justify;  
+      justify-content: center;
+      margin: auto;
+    }
     
   </style>
 </head>
@@ -128,6 +147,7 @@
   <header>
     <h1>Welcome to My Website
       </h1>
+    <h3>AP CSP Final Portfolio</h3>
     </header>
   
   <main>
@@ -138,8 +158,10 @@
   
   
   <div class = "aboutMe">
-    <p>Hi, my name is Fernando D. and I am a junior from Mt. Eden High School in Hayward, California. This year I had the opportunity to become a programmer through taking AP Computer Science Principles. I've enjoyed being able to learn more about how computers and the internet work as well as the logic behind some of my favorite games. Being a beginner programmer, it was hard at first to adjust to essentially a whole new language. However, over the course of the year with lots of practice I was able to develop a solid understanding of the fundamentals of coding. We started with learning C++, then moved on to HTML, JavaScript and CSS as well. In the end we were able to develop our own programs, collaborate with peers and even develop our own webpage such as this one. This website is a portfolio of the projects I have created this year. Altogether, despite a rocky start, this year turned out to be a great experience in learning a new skill and developing a greater understanding of an essential practice.
-    </p> 
+    <div class = "reflection">
+      <p>Hi, my name is Fernando D. and I am a junior from Mt. Eden High School in Hayward, California. This year I had the opportunity to become a programmer through taking AP Computer Science Principles. I've enjoyed being able to learn more about how computers and the internet work as well as the logic behind some of my favorite games. Being a beginner programmer, it was hard at first to adjust to essentially a whole new language. However, over the course of the year with lots of practice I was able to develop a solid understanding of the fundamentals of coding. We started with learning C++, then moved on to HTML, JavaScript and CSS as well. In the end we were able to develop our own programs, collaborate with peers and even develop our own webpage such as this one. This website is a portfolio of the projects I have created this year. Altogether, despite a rocky start, this year turned out to be a great experience in learning a new skill and developing a greater understanding of an essential practice.
+    </p>
+    </div>
   </div>
 
   <div class="grid">
@@ -176,7 +198,7 @@
   </div>
 
   <footer>
-    <p>© 2025 AP COMP SCI - Fernando D.</p>
+    <p>© 2025 AP CSP - Fernando D.</p>
     <p>Contact Me!</p>
     <a href = "mailto:16613@husd.k12.ca.us">Email</a>, <a href = "https://github.com/fdiaz1222"> GitHub</a>, <a href = "https://codepen.io/FDiaz1222">CodePen</a>  </footer>
 </body>
